@@ -33,6 +33,10 @@ class RectanguloActivity : AppCompatActivity() {
         btnLimpiar = findViewById(R.id.btnLimpiar)
         btnRegresar = findViewById(R.id.btnRegresar)
 
+        // Habilitar teclado numérico
+        editTextBase.inputType = android.text.InputType.TYPE_CLASS_NUMBER
+        editTextAltura.inputType = android.text.InputType.TYPE_CLASS_NUMBER
+
         //MOSTRAR EL NOMBRE
         val textViewNombreUsuario: TextView = findViewById(R.id.putNombredeUsuario)
         val extras = intent.extras
